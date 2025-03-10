@@ -16,6 +16,7 @@ module.exports = {
 			colors: {
 				primary: '#056BEB',
 				secondary: '#DF6E26',
+				textColor: '#020817',
 			},
 			fontFamily: {
 				body: ['SVN-Poppins', 'sans-serif'],
