@@ -27,7 +27,7 @@ get_header();
                 <div class="mt-2 py-[7px]">
                     <div class="flex items-center gap-7 w-full">
                         <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                            <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4">
+                            <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4" loading="lazy" draggable="false">
                             <span class="text-xs font-medium">SA</span>
                         </div>
                         <span class="w-2/3 text-sm text-gray-600">9th March</span>
@@ -35,7 +35,7 @@ get_header();
 
                     <div class="flex items-center gap-7 mt-2 w-full">
                         <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                            <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4">
+                            <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4" loading="lazy" draggable="false">
                             <span class="text-xs font-medium">NZ</span>
                         </div>
                         <span class="w-2/3 text-sm text-gray-600">09:00 AM</span>
@@ -86,7 +86,7 @@ get_header();
                     <div class="mt-2 py-[7px]">
                         <div class="flex items-center gap-7 w-full">
                             <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                                <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4">
+                                <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4" loading="lazy" draggable="false">
                                 <span class="text-xs font-medium">SA</span>
                             </div>
                             <span class="w-2/3 text-sm text-gray-600">9th March</span>
@@ -94,7 +94,7 @@ get_header();
 
                         <div class="flex items-center gap-7 mt-2 w-full">
                             <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                                <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4">
+                                <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4" loading="lazy" draggable="false">
                                 <span class="text-xs font-medium">NZ</span>
                             </div>
                             <span class="w-2/3 text-sm text-gray-600">09:00 AM</span>

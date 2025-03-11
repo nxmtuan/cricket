@@ -34,10 +34,10 @@ get_header();
 
     <!-- desktop -->
     <section class="container flex flex-col gap-[18px] bg-white p-[15px] rounded-[14px] shadow mb-[15px] max-sm:hidden">
-        <a href="/">
+        <a draggable="false" href="/">
             <div class="flex flex-col bg-white rounded overflow-hidden justify-around">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img8.png" alt=""
-                    class="w-full rounded-[10px] overflow-hidden" loading="lazy">
+                    class="w-full rounded-[10px] overflow-hidden" loading="lazy" draggable="false">
 
                 <div class="flex flex-col justify-between w-full mt-[10px]">
                     <div class="flex flex-col gap-[5px]">
@@ -59,10 +59,10 @@ get_header();
 
         <div class="w-full h-[15px] bg-[#8f8f8f]"></div>
 
-        <a href="/">
+        <a draggable="false" href="/">
             <div class="flex gap-[15px] bg-white rounded justify-around">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img9.png" alt=""
-                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy">
+                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy" draggable="false">
                 <div class="w-3/5 flex flex-col justify-between py-2">
                     <div class="">
                         <div class=" md:text-md tracking-wider dark:text-white text-black font-bold">Steve Smith Has His
@@ -82,10 +82,10 @@ get_header();
 
         <div class="w-2/5 h-[15px] bg-[#8f8f8f]"></div>
 
-        <a href="/">
+        <a draggable="false" href="/">
             <div class="flex gap-[15px] bg-white rounded justify-around">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img9.png" alt=""
-                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy">
+                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy" draggable="false">
                 <div class="w-3/5 flex flex-col justify-between py-2">
                     <div class="">
                         <div class=" md:text-md tracking-wider dark:text-white text-black font-bold">Steve Smith Has His
@@ -106,10 +106,10 @@ get_header();
     </section>
 
     <section class="container flex flex-col gap-[18px] bg-white p-[15px] rounded-[14px] shadow max-sm:hidden">
-        <a href="/">
+        <a draggable="false" href="/">
             <div class="flex gap-[15px] bg-white rounded justify-around">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img9.png" alt=""
-                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy">
+                    class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy" draggable="false">
                 <div class="w-3/5 flex flex-col justify-between py-2">
                     <div class="">
                         <div class=" md:text-md tracking-wider dark:text-white text-black font-bold">Steve Smith Has His
@@ -129,11 +129,11 @@ get_header();
     </section>
 
     <div class="flex justify-center text-center gap-[106px] py-20 max-sm:hidden">
-        <a href="/"
+        <a draggable="false" href="/"
             class="w-[223px] uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
             <?php _e('prev', 'gnws'); ?>
         </a>
-        <a href="/"
+        <a draggable="false" href="/"
             class="w-[223px] uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
             <?php _e('next', 'gnws'); ?>
         </a>
@@ -154,12 +154,12 @@ get_header();
             <div class="flex flex-col">
                 <div class="mb-2">
                     <div class="w-full">
-                        <a href="/">
+                        <a href="/" class="select-none">
                             <div class="flex flex-col  w-full lg:cursor-pointer">
                                 <div class="w-full rounded-md overflow-hidden">
                                     <div class="">
                                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img1.png"
-                                            alt="" class="w-full" loading="lazy">
+                                            alt="" class="w-full" loading="lazy" draggable="false">
                                     </div>
                                 </div>
                                 <h3
@@ -180,17 +180,18 @@ get_header();
                         </a>
                     </div>
                 </div>
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img2.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -228,12 +229,12 @@ get_header();
             <div class="flex flex-col">
                 <div class="mb-2">
                     <div class="w-full">
-                        <a href="/">
+                        <a href="/" class="select-none">
                             <div class="flex flex-col  w-full lg:cursor-pointer">
                                 <div class="w-full rounded-md overflow-hidden">
                                     <div class="">
                                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img3.png"
-                                            alt="" class="w-full" loading="lazy">
+                                            alt="" class="w-full" loading="lazy" draggable="false">
                                     </div>
                                 </div>
                                 <h3
@@ -254,17 +255,18 @@ get_header();
                         </a>
                     </div>
                 </div>
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img3.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -301,17 +303,18 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col">
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img4.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -348,17 +351,18 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col">
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img5.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -395,17 +399,18 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col">
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img6.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -442,17 +447,18 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col">
-                <div class="flex overflow-x-scroll mt-3 pt-1 pb-[9px]">
+                <div class="mt-3 pt-1 pb-[9px] -mx-2"
+                    data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="w-40 md:w-44 mr-2 md:mr-3 text-sm">
-                            <div class="w-full"><a
-                                    href="/news/india-always-had-superstars-axar-patel-made-them-world-champions-new-zealand-vs-india-icc-champions-trophy-2025-final-ind-vs-nz-final-2025-india-beat-new-zealand-win-champions-trophy-392025-1741549197631">
-                                    <div class="rounded-md lg:cursor-pointer w-40 md:w-44 self-stretch">
+                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-2 text-sm">
+                            <div class="w-full">
+                                <a href="/" class="select-none">
+                                    <div class="rounded-md lg:cursor-pointer self-stretch">
                                         <div class="flex items-center justify-center overflow-hidden relative rounded-md">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img7.png"
-                                                alt="" class="w-full" loading="lazy">
+                                                alt="" class="w-full" loading="lazy" draggable="false">
                                         </div>
                                         <h3 class="mt-2 md:text-sm md:font-semibold text-xs line-clamp-2 ">Varun
                                             Chakaravarthy: The X-Factor India Need To…</h3>
@@ -493,7 +499,7 @@ get_header();
                     ?>
                     <a href="/" class="flex gap-[15px]">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img11.png" alt=""
-                            class="w-2/5 object-cover rounded-[10px]">
+                            class="w-2/5 object-cover rounded-[10px]" loading="lazy" draggable="false">
                         <div class="w-3/5">
                             <h3 class="line-clamp-2 text-xs font-bold text-black mb-[7px]">Mohammed Shami Flips Spin
                                 Script

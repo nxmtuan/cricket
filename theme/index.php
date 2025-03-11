@@ -21,13 +21,7 @@ get_header();
         <?php
         if (have_posts()) {
 
-            if (is_home() && !is_front_page()):
-                ?>
-                <header class="entry-header">
-                    <h1 class="entry-title"><?php single_post_title(); ?></h1>
-                </header><!-- .entry-header -->
-                <?php
-            endif;
+
 
             // Load posts loop.
             while (have_posts()) {
@@ -35,8 +29,7 @@ get_header();
                 get_template_part('template-parts/content/content');
             }
 
-            // Previous/next page navigation.
-            gnws_the_posts_navigation();
+
 
         } else {
 

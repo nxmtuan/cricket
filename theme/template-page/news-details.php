@@ -27,7 +27,8 @@ get_header();
         </div>
         <div
             class="flex flex-col gap-[18px] bg-white p-[10px] rounded-[14px] shadow max-sm:bg-transparent max-sm:rounded-none max-sm:shadow-none max-sm:px-0">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img10.png" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img10.png" alt="" loading="lazy"
+                draggable="false">
 
             <div class="flex gap-[10px] mt-[10px] p-[10px] max-sm:flex-col max-sm:px-[18px]">
                 <div class="w-2/3 pr-[50px] border-r-2 border-[#D9D9D9] max-sm:w-full max-sm:border-none max-sm:pr-0">
@@ -35,19 +36,19 @@ get_header();
                     <div class="mt-[10px]">
                         <div class="font-bold"><?php _e('Tags', 'gnws'); ?></div>
                         <div class="flex gap-[10px] flex-wrap mt-3">
-                            <a href="/"
+                            <a draggable="false" href="/"
                                 class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
                                 <?php _e('Womens Premier League, 2025', 'gnws'); ?>
                             </a>
-                            <a href="/"
+                            <a draggable="false" href="/"
                                 class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
                                 <?php _e('ICC Champions Trophy, 2025', 'gnws'); ?>
                             </a>
-                            <a href="/"
+                            <a draggable="false" href="/"
                                 class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
                                 <?php _e('india', 'gnws'); ?>
                             </a>
-                            <a href="/"
+                            <a draggable="false" href="/"
                                 class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">
                                 <?php _e('ICC Champions ', 'gnws'); ?>
                             </a>
@@ -68,9 +69,9 @@ get_header();
                         <?php
                         for ($i = 0; $i < 4; $i++) {
                             ?>
-                            <a href="/" class="flex gap-[15px]">
+                            <a draggable="false" href="/" class="flex gap-[15px]">
                                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img11.png" alt=""
-                                    class="w-2/5 object-cover rounded-[10px]">
+                                    class="w-2/5 object-cover rounded-[10px]" loading="lazy" draggable="false">
                                 <div class="w-3/5">
                                     <h3 class="line-clamp-2 text-xs font-bold text-black mb-[7px]">Mohammed Shami Flips Spin
                                         Script

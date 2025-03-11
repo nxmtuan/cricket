@@ -19,7 +19,7 @@ module.exports = {
 				textColor: '#020817',
 			},
 			fontFamily: {
-				body: ['SVN-Poppins', 'sans-serif'],
+				body: ['Manrope', 'sans-serif'],
 			},
 		},
 		container: {

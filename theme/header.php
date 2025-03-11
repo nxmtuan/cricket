@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('text-textColor'); ?>>
+<body <?php body_class('font-body font-light text-textColor'); ?>>
 
 	<?php wp_body_open(); ?>
 
@@ -35,7 +35,7 @@
 				<ol class="flex gap-10 h-full">
 					<li
 						class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 bg-[#5C5C5C4D] hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-[#DF6E26] hover:after:bg-[#DF6E26]">
-						<a href="#">
+						<a href="/">
 							<div class="grid justify-items-center">
 								<div class="flex items-center justify-center flex-col">
 									<?php echo svg('home', '30', '30') ?>
@@ -47,7 +47,7 @@
 
 					<li
 						class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26]">
-						<a href="#">
+						<a href="/schedule">
 							<div class="grid justify-items-center">
 								<div class="flex items-center justify-center flex-col">
 									<?php echo svg('schedule', '30', '30') ?>
@@ -59,7 +59,7 @@
 
 					<li
 						class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26]">
-						<a href="#">
+						<a href="/ipl">
 							<div class="grid justify-items-center">
 								<div class="flex items-center justify-center flex-col">
 									<?php echo svg('ipl', '30', '30') ?>
@@ -71,7 +71,7 @@
 
 					<li
 						class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26]">
-						<a href="#">
+						<a href="/news">
 							<div class="grid justify-items-center">
 								<div class="flex items-center justify-center flex-col">
 									<?php echo svg('news', '30', '30') ?>
@@ -97,7 +97,7 @@
 			<ol class="flex gap-[10px] h-full">
 				<li
 					class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 bg-[#5C5C5C4D] hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-[#DF6E26] hover:after:bg-[#DF6E26] max-sm:py-3">
-					<a href="#">
+					<a href="/">
 						<div class="grid justify-items-center">
 							<div class="flex items-center justify-center flex-col">
 								<?php echo svg('home', '30', '30') ?>
@@ -109,7 +109,7 @@
 
 				<li
 					class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26] max-sm:py-3">
-					<a href="#">
+					<a href="/schedule">
 						<div class="grid justify-items-center">
 							<div class="flex items-center justify-center flex-col">
 								<?php echo svg('schedule', '30', '30') ?>
@@ -121,7 +121,7 @@
 
 				<li
 					class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26] max-sm:py-3">
-					<a href="#">
+					<a href="/ipl">
 						<div class="grid justify-items-center">
 							<div class="flex items-center justify-center flex-col">
 								<?php echo svg('ipl', '30', '30') ?>
@@ -133,7 +133,7 @@
 
 				<li
 					class="flex relative text-xs py-4 flex-col items-center h-auto min-w-20 z-[99999] md:cursor-pointer transition ease-in duration-150 group px-2 hover:bg-[#5C5C5C4D] after:content-[''] after:block after:absolute after:bottom-0 after:w-full after:h-[2px] after:bg-transparent hover:after:bg-[#DF6E26] max-sm:py-3">
-					<a href="#">
+					<a href="/news">
 						<div class="grid justify-items-center">
 							<div class="flex items-center justify-center flex-col">
 								<?php echo svg('news', '30', '30') ?>

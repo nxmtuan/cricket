@@ -161,6 +161,30 @@ pre.wp-block-code {
 	text-align: center;
 }
 
+.flickity-button {
+	width: 30px;
+	height: 30px;
+	color: #095ac0;
+	background: white;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.flickity-prev-next-button.next {
+	right: -5px;
+}
+.flickity-prev-next-button.previous {
+	left: -5px;
+}
+
+.flickity-page-dots .dot.is-selected {
+	background-color: #095ac0;
+}
+
+.flickity-page-dots .dot {
+	opacity: 1;
+	background-color: white;
+}
+
 @media not all and (min-width: 640px) {
 	.the_content h1 {
 		font-size: 15px;
@@ -172,5 +196,8 @@ pre.wp-block-code {
 	}
 	.the_content img {
 		border-radius: 0px;
+	}
+	.flickity-button {
+		display: none;
 	}
 }

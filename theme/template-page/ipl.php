@@ -80,7 +80,7 @@ get_header();
                                         <div><?php _e('Sold to', 'gnws'); ?></div>
                                         <div class="uppercase">LSG</div>
                                     </div>
-                                    <a href="/" class="text-xs text-center text-[#007BBD] w-7">
+                                    <a draggable="false" href="/" class="text-xs text-center text-[#007BBD] w-7">
                                         <?php _e('View Bids', 'gnws'); ?>
                                     </a>
                                 </div>
@@ -105,7 +105,7 @@ get_header();
                 ?>
                 <div class="border border-[#D1D5DB] rounded-md overflow-hidden">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img12.png" alt="" loading="lazy"
-                        class="w-full object-cover">
+                        class="w-full object-cover" draggable="false">
                     <div class="p-3 flex flex-col gap-[3px] text-xs">
                         <span class="font-semibold">MI</span>
                         <span><?php _e('Indian - 15 Players', 'gnws'); ?></span>
@@ -145,7 +145,7 @@ get_header();
 
         <div class="p-[13px]">
             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/ad.png" alt="" loading="lazy"
-                class="w-full h-[250px] object-cover">
+                class="w-full h-[250px] object-cover" draggable="false">
         </div>
 
         <div class="flex gap-2 p-2 max-sm:flex-col max-sm:gap-4">
@@ -159,7 +159,7 @@ get_header();
                             <p class="text-xl font-bold">1</p>
                             <div class="flex gap-1 items-center">
                                 <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/au.png" alt=""
-                                    loading="lazy" class="w-8 h-5 object-cover">
+                                    loading="lazy" class="w-8 h-5 object-cover" draggable="false">
                                 <div class="text-xl">IND</div>
                             </div>
                             <p class="text-xl font-bold">122</p>
@@ -178,7 +178,7 @@ get_header();
                                 <td class="py-[18px] px-2">2</td>
                                 <td class="py-[18px] px-2 flex justify-center items-center space-x-2">
                                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/au.png" alt=""
-                                        loading="lazy" class="w-8 h-5 object-cover"> <span>AUS</span>
+                                        loading="lazy" class="w-8 h-5 object-cover" draggable="false"> <span>AUS</span>
                                 </td>
                                 <td class="py-[18px] px-2">110</td>
                             </tr>

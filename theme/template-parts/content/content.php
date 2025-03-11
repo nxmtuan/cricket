@@ -1,46 +1,22 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package gnws
- */
-
-?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<header class="entry-header">
-		<?php
-		if ( is_sticky() && is_home() && ! is_paged() ) {
-			printf( '<span">%s</span>', esc_html_x( 'Featured', 'post', 'gnws' ) );
-		}
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-		endif;
-		?>
-	</header><!-- .entry-header -->
-
-	<?php gnws_post_thumbnail(); ?>
-
-	<div <?php gnws_content_class( 'entry-content' ); ?>>
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div>' . __( 'Pages:', 'gnws' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php gnws_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-${ID} -->
+<div class="post__item">
+	<a draggable="false" href="<?php the_permalink(); ?>">
+		<div class="flex gap-[15px] bg-white rounded justify-around">
+			<img src="<?php gnws_post_thumbnail_full() ?>" alt="<?php the_title(); ?>"
+				class="w-2/5 rounded-[10px] overflow-hidden" loading="lazy" draggable="false">
+			<div class="w-3/5 flex flex-col justify-between py-2">
+				<div class="">
+					<div class="md:text-md tracking-wider dark:text-white text-black font-bold"><?php the_title(); ?>
+					</div>
+					<h2 class="line-clamp-3 lg:text-sm text-xs hidden lg:inline-flex leading-5 text-[#3F4B62]">
+						<?php echo wp_trim_words(get_the_excerpt(), 30); ?>
+					</h2>
+				</div>
+				<div class="text-xs flex flex-row justify-between text-[#8C98B0]">
+					<div>By: <?php the_author(); ?></div>
+					<div><?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?></div>
+				</div>
+			</div>
+		</div>
+	</a>
+	<div class="w-2/5 h-[15px] bg-[#8f8f8f]"></div>
+</div>
