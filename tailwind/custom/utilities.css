@@ -160,3 +160,17 @@ pre.wp-block-code {
 .wp-block-image.is-resized > figcaption {
 	text-align: center;
 }
+
+@media not all and (min-width: 640px) {
+	.the_content h1 {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.the_content p {
+		font-size: 12px;
+		line-height: 27px;
+	}
+	.the_content img {
+		border-radius: 0px;
+	}
+}

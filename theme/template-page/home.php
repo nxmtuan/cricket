@@ -7,85 +7,88 @@ Template Name: Home
 get_header();
 ?>
 
-<main class="home-page bg-[#F1F5F9]">
-    <section class="bg-white flex justify-center py-[15px]">
-        <div class="flex py-[10px] gap-[5px]">
-            <div class="bg-secondary w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+<main class="home-page bg-[#F1F5F9] max-sm:pb-[85px]">
+    <section class="bg-white flex justify-center py-[15px] max-sm:bg-[#F1F5F9]">
+        <div class="flex py-[10px] gap-[5px] max-sm:gap-[10px]">
+            <div
+                class="bg-secondary w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 All Matches
             </div>
-            <div class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+            <div
+                class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 ICT</div>
-            <div class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+            <div
+                class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 WPL</div>
-            <div class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+            <div
+                class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 IMLT</div>
-            <div class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+            <div
+                class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 RT</div>
-            <div class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden">
+            <div
+                class="bg-transparent w-[84px] text-black px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
                 TFT</div>
         </div>
     </section>
 
     <section class="bg-[#808080D1]">
-        <div class="container py-5 flex justify-center">
-            <?php
-            for ($i = 0; $i < 3; $i++) {
-                ?>
-                <div class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm border mr-[10px]">
-                    <h2 class="w-full pb-2 text-[15px] font-medium text-gray-900 border-b-2 border-[#CCCCCC]">ICC Champions
-                        Trophy, 2025</h2>
-                    <p class="text-[13px] text-gray-500 flex items-center mt-2 gap-2">
-                        2nd Semi-Final <span class="mx-1 text-[#CCCCCC]">|</span> <?php echo svg('location', '10', '13') ?>
-                        Lahore
-                    </p>
+        <div class="container py-5 flex justify-center overflow-hidden max-sm:p-0">
 
-                    <div class="mt-2 py-[7px]">
-                        <div class="flex items-center gap-7 w-full">
-                            <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                                <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4">
-                                <span class="text-sm font-medium">SA</span>
-                            </div>
-                            <span class="w-2/3 text-sm text-gray-600">5th March</span>
+            <div
+                class="bg-white shadow-md rounded-lg p-4 w-full border mr-[10px] max-sm:bg-[#F1F5F9] max-sm:rounded-none max-sm:mr-0 max-sm:border-none">
+                <h2 class="w-full pb-2 text-[15px] font-medium text-gray-900 border-b-2 border-[#CCCCCC]">ICC Champions
+                    Trophy, 2025</h2>
+                <p class="text-[13px] text-gray-500 flex items-center mt-2 gap-2">
+                    2nd Semi-Final <span class="mx-1 text-[#CCCCCC]">|</span> <?php echo svg('location', '10', '13') ?>
+                    Lahore
+                </p>
+
+                <div class="mt-2 py-[7px]">
+                    <div class="flex items-center gap-7 w-full">
+                        <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
+                            <img src="https://flagcdn.com/w40/za.png" class="w-5 h-4">
+                            <span class="text-sm font-medium">SA</span>
                         </div>
+                        <span class="w-2/3 text-sm text-gray-600">5th March</span>
+                    </div>
 
-                        <div class="flex items-center gap-7 mt-2 w-full">
-                            <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
-                                <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4">
-                                <span class="text-sm font-medium">NZ</span>
-                            </div>
-                            <span class="w-2/3 text-sm text-gray-600">09:00 AM</span>
+                    <div class="flex items-center gap-7 mt-2 w-full">
+                        <div class="w-1/3 flex items-center space-x-2 border-r-2 border-[#CCCCCC]">
+                            <img src="https://flagcdn.com/w40/nz.png" class="w-5 h-4">
+                            <span class="text-sm font-medium">NZ</span>
                         </div>
-                    </div>
-
-                    <p id="countdown" class="mt-3 text-[13px] font-medium text-gray-800">13 mins to toss</p>
-
-                    <div class="w-full bg-gray-300 h-1.5 rounded-full mt-2 relative">
-                        <div class="bg-red-500 h-1.5 rounded-full absolute left-0 top-0" style="width: 61%;"></div>
-                        <div class="bg-blue-500 h-1.5 rounded-full absolute right-0 top-0" style="width: 39%;"></div>
-                    </div>
-
-                    <div class="flex justify-between text-xs text-gray-600 mt-1 pb-2 border-b-2 border-[#CCCCCC]">
-                        <span class="text-red-500">SA (61%)</span>
-                        <span class="text-blue-500">NZ (39%)</span>
-                    </div>
-
-                    <div class="flex justify-end space-x-6 text-blue-500 text-[13px] font-medium pt-2">
-                        <a href="#" class="hover:underline"><?php _e('Schedule', 'gnws'); ?></a>
-                        <a href="#" class="hover:underline"><?php _e('Points Table', 'gnws'); ?></a>
+                        <span class="w-2/3 text-sm text-gray-600">09:00 AM</span>
                     </div>
                 </div>
-                <?php
-            }
-            ?>
+
+                <p id="countdown" class="mt-3 text-[13px] font-medium text-gray-800">13 mins to toss</p>
+
+                <div class="w-full bg-gray-300 h-1.5 rounded-full mt-2 relative">
+                    <div class="bg-red-500 h-1.5 rounded-full absolute left-0 top-0" style="width: 61%;"></div>
+                    <div class="bg-blue-500 h-1.5 rounded-full absolute right-0 top-0" style="width: 39%;"></div>
+                </div>
+
+                <div class="flex justify-between text-xs text-gray-600 mt-1 pb-2 border-b-2 border-[#CCCCCC]">
+                    <span class="text-red-500">SA (61%)</span>
+                    <span class="text-blue-500">NZ (39%)</span>
+                </div>
+
+                <div class="flex justify-end space-x-6 text-blue-500 text-[13px] font-medium pt-2">
+                    <a href="#" class="hover:underline"><?php _e('Schedule', 'gnws'); ?></a>
+                    <a href="#" class="hover:underline"><?php _e('Points Table', 'gnws'); ?></a>
+                </div>
+            </div>
+
             <div class="mt-3"></div>
         </div>
     </section>
 
-    <section class="container py-[5px] px-5 flex gap-[10px]">
-        <div class="w-2/3">
+    <section class="container py-[5px] px-5 flex gap-[10px] max-sm:flex-col max-sm:px-0">
+        <div class="w-2/3 max-sm:w-full">
 
             <section
-                class="mx-3 mb-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 mb-[5px] shadow border border-gray/20 md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4 rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1"><?php _e('Articles', 'gnws'); ?></div>
@@ -98,7 +101,7 @@ get_header();
                             <a href="/">
                                 <div class="flex flex-col  w-full lg:cursor-pointer">
                                     <div class="w-full rounded-md overflow-hidden">
-                                        <div class="md:block hidden">
+                                        <div class="">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img1.png"
                                                 alt="" class="w-full" loading="lazy">
                                         </div>
@@ -159,7 +162,7 @@ get_header();
             </section>
 
             <section
-                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1"><?php _e('Featured Videos', 'gnws'); ?>
@@ -173,7 +176,7 @@ get_header();
                             <a href="/">
                                 <div class="flex flex-col  w-full lg:cursor-pointer">
                                     <div class="w-full rounded-md overflow-hidden">
-                                        <div class="md:block hidden">
+                                        <div class="">
                                             <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img3.png"
                                                 alt="" class="w-full" loading="lazy">
                                         </div>
@@ -234,7 +237,7 @@ get_header();
             </section>
 
             <section
-                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1">
@@ -282,7 +285,7 @@ get_header();
             </section>
 
             <section
-                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1">
@@ -330,7 +333,7 @@ get_header();
             </section>
 
             <section
-                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1">
@@ -378,7 +381,7 @@ get_header();
             </section>
 
             <section
-                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded">
+                class="mx-3 my-[5px] shadow border border-gray/20  md:mx-0  dark:bg-gray bg-white p-3 md:px-6 md:p-4  rounded max-sm:mx-0 max-sm:px-[17px]">
                 <div class="mb-3">
                     <div class="relative flex flex-col gap-1">
                         <div class="font-semibold text-sm md:text-base mb-1">
@@ -427,7 +430,7 @@ get_header();
 
         </div>
 
-        <div class="w-1/3">
+        <div class="w-1/3 max-sm:w-full">
 
             <section class="mb-[9px]">
                 <div class="bg-white shadow rounded-md p-[10px] w-full border border-[#2B323F33]">
@@ -553,7 +556,7 @@ get_header();
                 </div>
             </section>
 
-            <section class="flex flex-col items-center shadow rounded py-4">
+            <section class="bg-white flex flex-col items-center shadow rounded py-4 max-sm:hidden">
                 <div class="text-lg font-bold mb-3">Follow cricket.top</div>
                 <div class="flex justify-center gap-7">
                     <a href="/"><?php echo svg('tw-1', '64', '53') ?></a>

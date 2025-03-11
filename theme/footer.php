@@ -10,7 +10,7 @@
  */
 
 ?>
-<footer class="bg-[#25262C] flex flex-col items-center py-6">
+<footer class="bg-[#25262C] flex flex-col items-center py-6 max-sm:hidden">
 	<div class="flex mb-5 gap-[50px] w-fit">
 		<a href="/">
 			<img alt="cdcSVG" loading="lazy" class="h-[70px]"
@@ -33,10 +33,10 @@
 		<a href="#" class="text-white text-xs">Copyright @2025 Cricket.top - All rights reserved</a>
 	</div>
 </footer>
-<div
+<!-- <div
 	class="back-to-top fixed bottom-14 right-7 w-10 h-10 rounded-full m-auto bg-slate-200  cursor-pointer transition-all duration-500 hover:bg-primary text-primary hover:text-white">
 	<?php echo svg('back-top', '20', '20') ?>
-</div>
+</div> -->
 <?php wp_footer(); ?>
 
 </body>
