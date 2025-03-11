@@ -26,10 +26,23 @@
 
 	<header class="sticky top-0 flex bg-primary text-white z-50 max-sm:hidden">
 		<div class="container flex gap-10 w-full items-center justify-center h-full">
-			<a href="/">
-				<img alt="cdcSVG" loading="lazy" class="h-[70px]"
-					src="<?php echo get_stylesheet_directory_uri() ?>/assets/svg/logo.svg" />
-			</a>
+
+			<?php
+			$custom_logo_id = get_theme_mod('custom_logo');
+			$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+			if ($image) {
+				$site_url = get_bloginfo('url');
+				$site_description = get_bloginfo('description');
+				$logo_url = $image[0];
+				?>
+				<a href="<?php echo esc_url($site_url); ?>" title="<?php echo esc_attr($site_description); ?>"
+					class="table-cell align-middle">
+					<img src="<?php echo esc_url($logo_url); ?>" alt="Logo" class="h-[70px] object-cover">
+				</a>
+				<?php
+			}
+			?>
 
 			<nav class="flex h-full items-center justify-center">
 				<ol class="flex gap-10 h-full">
@@ -92,6 +105,7 @@
 				src="<?php echo get_stylesheet_directory_uri() ?>/assets/svg/logo-mobile.svg" />
 		</a>
 	</div>
+
 	<div class="fixed bottom-0 bg-primary text-white md:hidden z-50 w-full">
 		<nav class="flex h-full items-center justify-center">
 			<ol class="flex gap-[10px] h-full">
