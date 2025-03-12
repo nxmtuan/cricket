@@ -12,20 +12,20 @@ get_header();
         <div
             class="flex justify-between text-sm font-semibold text-center bg-[#131B2A] text-[#A1A1A1] p-2 gap-2 max-sm:px-0">
             <div
-                class="w-1/4 flex gap-1 items-center justify-center py-[10px] border-b-2 border-white text-white duration-300 cursor-default hover:text-white hover:border-white max-sm:text-xs">
+                class="w-1/4 font-semibold md:text-sm text-xs flex gap-1 items-center justify-center py-[10px] border-b-2 border-white text-white duration-300 cursor-default hover:text-white hover:border-white">
                 <?php _e('Overview', 'gnws'); ?>
             </div>
             <div
-                class="w-1/4 flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white max-sm:text-xs">
+                class="w-1/4 font-semibold md:text-sm text-xs flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white">
                 <?php _e('Auction', 'gnws'); ?> <span
                     class="bg-[#D0D0D0] text-[#131B2A] uppercase px-2 py-[2px] rounded-full max-sm:text-[8px]"><?php _e('completed', 'gnws'); ?></span>
             </div>
             <div
-                class="w-1/4 flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white max-sm:text-xs">
+                class="w-1/4 font-semibold md:text-sm text-xs flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white">
                 <?php _e('Teams', 'gnws'); ?>
             </div>
             <div
-                class="w-1/4 flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white max-sm:text-xs">
+                class="w-1/4 font-semibold md:text-sm text-xs flex gap-1 items-center justify-center py-[10px] border-b-2 border-transparent duration-300 cursor-default hover:text-white hover:border-white">
                 <?php _e('Ranking', 'gnws'); ?>
             </div>
         </div>
@@ -68,19 +68,20 @@ get_header();
                             <div class="flex items-center border rounded-md border-[#E2E8F0] overflow-hidden p-[10px]">
                                 <?php echo svg('avt', '40', '40') ?>
                                 <div class="ml-2">
-                                    <div>Rishabh Pant</div>
-                                    <div>WK</div>
+                                    <div class="text-sm font-semibold text-[#434343]">Rishabh Pant</div>
+                                    <div class="text-xs text-[#727272]">WK</div>
                                 </div>
                                 <div class="ml-auto flex items-center gap-8">
                                     <div class="text-xs text-center">
                                         <div><?php _e('Price', 'gnws'); ?></div>
                                         <div class="font-semibold">₹27.00 Cr</div>
                                     </div>
-                                    <div class="text-xs text-center text-[#119247]">
+                                    <div class="text-xs font-semibold text-center text-[#119247]">
                                         <div><?php _e('Sold to', 'gnws'); ?></div>
                                         <div class="uppercase">LSG</div>
                                     </div>
-                                    <a draggable="false" href="/" class="text-xs text-center text-[#007BBD] w-7">
+                                    <a draggable="false" href="/"
+                                        class="text-xs font-semibold text-center text-[#007BBD] w-7">
                                         <?php _e('View Bids', 'gnws'); ?>
                                     </a>
                                 </div>
@@ -92,7 +93,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="mt-3 text-center text-[#007BBD]">
+            <div class="mt-3 font-semibold text-center text-[#007BBD]">
                 <?php _e('View Auction Results', 'gnws'); ?>
             </div>
         </div>

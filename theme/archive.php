@@ -11,29 +11,29 @@ get_header();
 ?>
 <main class="news-page bg-[#F1F5F9] pb-20 max-sm:pb-[85px]">
 	<section class="bg-white flex justify-center py-[15px] max-sm:bg-[#F1F5F9]">
-		<div class="flex py-[10px] gap-[5px] max-sm:gap-[10px]">
+		<div class="md:grid flex grid-cols-6 py-[10px] gap-[10px] auto-cols-max">
 			<div
-				class="bg-secondary active [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary active [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">All Matches</a>
 			</div>
 			<div
-				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">ICT</a>
 			</div>
 			<div
-				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">WPL</a>
 			</div>
 			<div
-				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">IMLT</a>
 			</div>
 			<div
-				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">RT</a>
 			</div>
 			<div
-				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-black w-[84px] text-white px-[3px] text-center text-sm rounded-[10px] overflow-hidden max-sm:w-fit max-sm:px-[6px]">
+				class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
 				<a href="">TFT</a>
 			</div>
 		</div>
