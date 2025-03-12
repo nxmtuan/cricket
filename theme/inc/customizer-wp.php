@@ -44,43 +44,6 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 // Post type
 add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
-/**
- * Setup Plugin ACF
- */
-// 1. customize ACF path
-add_filter('acf/settings/path', 'willgroup_acf_settings_path');
-function willgroup_acf_settings_path($path)
-{
-	$path = get_stylesheet_directory() . '/inc/acf/';
-	return $path;
-}
-
-// 2. customize ACF dir
-add_filter('acf/settings/dir', 'willgroup_acf_settings_dir');
-function willgroup_acf_settings_dir($dir)
-{
-	$dir = get_stylesheet_directory_uri() . '/inc/acf/';
-	return $dir;
-}
-
-// 3. Include ACF
-include_once(get_stylesheet_directory() . '/inc/acf/acf.php');
-
-
-// Add save and load points for ACF JSON
-add_filter('acf/settings/save_json', 'cysp_acf_json_save_point');
-function cysp_acf_json_save_point($path)
-{
-	$path = get_stylesheet_directory() . '/acf-json';
-	return $path;
-}
-
-add_filter('acf/settings/load_json', 'cysp_acf_json_load_point');
-function cysp_acf_json_load_point($paths)
-{
-	$paths[] = get_stylesheet_directory() . '/acf-json';
-	return $paths;
-}
 
 /**
  * Style Dashboard

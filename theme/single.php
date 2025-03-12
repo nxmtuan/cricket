@@ -25,10 +25,11 @@ get_header();
 				<div class="max-sm:hidden"><?php echo svg('user', '18', 18) ?></div>
 				<span><?php the_author(); ?>
 				</span>
-				<div class="w-[2px] h-full bg-black"></div>
+				<div class="w-[2px] h-[18px] bg-black"></div>
 				<span>
 					<b><?php _e('Last updated on', 'gnws') ?> <?php echo get_the_date() ?> |
-						<?php echo get_the_time() ?></b></span>
+						<?php echo get_the_time() ?></b>
+				</span>
 			</div>
 		</div>
 		<div
@@ -45,7 +46,7 @@ get_header();
 							$tags = get_the_tags();
 							if ($tags) {
 								foreach ($tags as $tag) {
-									echo '<a draggable="false" href="' . esc_url(get_tag_link($tag->term_id)) . '" class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB]">' . esc_html($tag->name) . '</a>';
+									echo '<a draggable="false" href="' . esc_url(get_tag_link($tag->term_id)) . '" class="uppercase font-bold rounded py-[5px] px-[9px] text-xs text-[#056BEB] border-2 border-[#056BEB] hover:scale-105 transition-all duration-300">' . esc_html($tag->name) . '</a>';
 								}
 							}
 							?>

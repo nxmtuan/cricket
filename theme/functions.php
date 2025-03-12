@@ -162,11 +162,6 @@ add_action('widgets_init', 'gnws_widgets_init');
  */
 function gnws_scripts()
 {
-	// if ( class_exists( 'WPCF7' ) ) {
-	// 	wp_enqueue_style( 'gnws-alert', get_template_directory_uri() . '/assets/alert/css/cf7simplepopup-core.css', array(), GNWS_VERSION );
-	// 	wp_enqueue_script( 'gnws-jquery_alert', get_template_directory_uri() . '/assets/alert/js/cf7simplepopup-core.js', array(), GNWS_VERSION, true );
-	// 	wp_enqueue_script( 'gnws-jquery_alert_main', get_template_directory_uri() . '/assets/alert/js/sweetalert.js', array(), GNWS_VERSION, true );
-	// }
 	wp_enqueue_style('gnws-css-flickity', get_template_directory_uri() . '/assets/lib/flickity.min.css');
 	wp_enqueue_style('gnws-css-font', get_template_directory_uri() . '/assets/fonts/font.css');
 	wp_enqueue_style('gnws-style', get_stylesheet_uri(), array(), GNWS_VERSION);

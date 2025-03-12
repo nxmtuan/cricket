@@ -10,30 +10,30 @@ get_header();
 <main class="news-page bg-[#F1F5F9] max-sm:pb-[85px]">
     <section class="flex justify-center py-[15px] bg-[#F1F5F9]">
         <div class="md:grid flex grid-cols-6 py-[10px] gap-[10px] auto-cols-max">
-            <div
+            <a href="/"
                 class="bg-secondary active [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">All Matches</a>
-            </div>
-            <div
+                All Matches
+            </a>
+            <a href="/"
                 class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">ICT</a>
-            </div>
-            <div
+                ICT
+            </a>
+            <a href="/"
                 class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">WPL</a>
-            </div>
-            <div
+                WPL
+            </a>
+            <a href="/"
                 class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">IMLT</a>
-            </div>
-            <div
+                IMLT
+            </a>
+            <a href="/"
                 class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">RT</a>
-            </div>
-            <div
+                RT
+            </a>
+            <a href="/"
                 class="bg-secondary [&:not(.active)]:bg-transparent [&:not(.active)]:text-[#020817] text-white font-semibold text-center text-sm rounded-[10px] overflow-hidden min-w-max max-sm:w-fit md:px-3 px-[6px] hover:!bg-secondary hover:!text-white duration-150">
-                <a href="">TFT</a>
-            </div>
+                TFT
+            </a>
         </div>
     </section>
 
@@ -146,32 +146,12 @@ get_header();
                         </div>
                     </a>
                 </div>
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img2.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
@@ -222,32 +202,12 @@ get_header();
                         </div>
                     </a>
                 </div>
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img3.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
@@ -271,32 +231,12 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col gap-[10px] mb-[10px]">
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img4.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
@@ -321,32 +261,12 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col gap-[10px] mb-[10px]">
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img5.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
@@ -371,32 +291,12 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col gap-[10px] mb-[10px]">
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img6.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
@@ -420,32 +320,12 @@ get_header();
                 </div>
             </div>
             <div class="flex flex-col gap-[10px] mb-[10px]">
-                <div class="pt-1 pb-[9px] -mx-2"
+                <div class="pt-1 pb-[9px] -mx-2 px-[5px]"
                     data-flickity='{ "draggable": true,"wrapAround": false,"imagesLoaded": true,"prevNextButtons": false, "pageDots": false, "cellAlign": "left","contain": true, "autoPlay":false}'>
                     <?php
                     for ($i = 0; $i < 8; $i++) {
                         ?>
-                        <div class="lg:w-1/4 md:w-1/3 w-1/2 px-[5px] text-sm">
-                            <div class="w-full">
-                                <a href="/" class="select-none">
-                                    <div class="rounded-md lg:cursor-pointer self-stretch">
-                                        <div class="flex items-center justify-center overflow-hidden relative rounded-md">
-                                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/img7.png"
-                                                alt="" class="w-full" loading="lazy" draggable="false">
-                                        </div>
-                                        <h3 class="mt-2 md:text-sm md:font-semibold font-medium text-xs line-clamp-2 ">
-                                            Varun
-                                            Chakaravarthy: The X-Factor India Need To…</h3>
-                                        <div class="flex items-center justify-between text-[#8C98B0]">
-                                            <p class=" text-xs w-6/12 line-clamp-1 border-r-2">Pramod
-                                                Ananth
-                                            </p>
-                                            <p class="text-xs">09 Mar 2025</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php get_template_part('template-parts/content/content', 'card') ?>
                         <?php
                     }
                     ?>
